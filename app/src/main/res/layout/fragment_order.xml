@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragments.OrderFragment">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/line1"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/bg_5"
+                android:layout_height="100dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Task Record"
+                    android:textColor="#983535"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+
+                    />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Available Opportunities: "
+                        android:textColor="#983535"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+
+                        /><TextView
+                        android:id="@+id/availableOpportunityTvId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="36"
+                        android:textColor="#983535"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <com.google.android.material.tabs.TabLayout
+                android:layout_below="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabMode="fixed"
+                app:tabGravity="fill"
+                android:id="@+id/tablayout_id"
+                />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pagerId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tablayout_id" />
+
+
+
+        </RelativeLayout>
+</LinearLayout>

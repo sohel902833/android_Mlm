@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/icon_imageViewId"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/facebook" />
+
+        <TextView
+            android:id="@+id/task_typeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/icon_imageViewId"
+            android:text="Task Income : 2.00USD"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/desc_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/task_typeTV"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/icon_imageViewId"
+            android:text="Publish Shared post and add customer service"
+            android:textColor="#000"
+            android:textSize="16sp" />
+        <LinearLayout
+            android:layout_marginBottom="5dp"
+            android:weightSum="3"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/desc_TV"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forward"
+                android:id="@+id/forwardBtn"
+                android:layout_weight="1"
+                android:background="#fff"
+
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task Sample"
+                android:id="@+id/taskSampleBtn"
+                android:layout_weight="1"
+                android:background="#fff"
+
+                />  <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:id="@+id/submitBTN"
+                android:layout_weight="1"
+                android:background="#ffff"
+
+                />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
