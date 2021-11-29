@@ -1,7 +1,9 @@
 package com.sohelsk.mlmapplication.HomeFragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
@@ -10,7 +12,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.sohelsk.mlmapplication.Adapter.ViewPagerAdapter;
+import com.sohelsk.mlmapplication.ChatingActivity;
+import com.sohelsk.mlmapplication.DataModel.User;
+import com.sohelsk.mlmapplication.LocalDb.UserDb;
 import com.sohelsk.mlmapplication.OrderFragments.OrderFinishedFragment;
 import com.sohelsk.mlmapplication.OrderFragments.OrderInvalidFragment;
 import com.sohelsk.mlmapplication.OrderFragments.OrderProgressFragment;
@@ -24,6 +30,9 @@ public class OrderFragment extends Fragment {
     private ViewPager viewPager;
     private ViewPagerAdapter adapter;
     private TextView availableOpportunityTv;
+    private UserDb userDb;
+
+    private FloatingActionButton msgBtn;
     public OrderFragment() {
         // Required empty public constructor
     }
@@ -36,7 +45,7 @@ public class OrderFragment extends Fragment {
         View view= inflater.inflate(R.layout.fragment_order, container, false);
         init(view);
 
-       adapter=new ViewPagerAdapter(getActivity().getSupportFragmentManager());
+       adapter=new ViewPagerAdapter(getChildFragmentManager());
 
 
         //add Fragment here
@@ -48,13 +57,43 @@ public class OrderFragment extends Fragment {
         mTabLayout.setupWithViewPager(viewPager);
 
 
+        msgBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), ChatingActivity.class));
+            }
+        });
+
+
+
 
         return  view;
     }
 
     private void init(View view){
+
+        msgBtn=view.findViewById(R.id.messageIconButton);
+        userDb=new UserDb(getActivity());
         mTabLayout=view.findViewById(R.id.tablayout_id);
         viewPager=view.findViewById(R.id.view_pagerId);
         availableOpportunityTv=view.findViewById(R.id.availableOpportunityTvId);
+
+        //setup toolbar
+        Toolbar toolbar = getActivity().findViewById(R.id.appBarId);
+        TextView appBarTv=toolbar.findViewById(R.id.layoutTextId);
+        appBarTv.setVisibility(View.GONE);
+
+
+
+
+        User user=userDb.getUserData();
+        if(user.getTodayDone()!=null){
+            if(user.getCurrentMembership().getLevelName()!=null){
+                int left=user.getCurrentMembership().getNumOfJobs()-user.getTodayDone();
+                availableOpportunityTv.setText(""+left);
+            }
+        }
+
+
     }
 }

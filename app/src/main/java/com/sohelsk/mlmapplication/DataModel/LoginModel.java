@@ -4,8 +4,7 @@ import com.google.gson.annotations.SerializedName;
 
 public class LoginModel {
     String message;
-    @SerializedName("access_token")
-      String  token;
+    String  token;
 
     public LoginModel(){
 
@@ -22,7 +21,6 @@ public class LoginModel {
     public void setToken(String token) {
         this.token = token;
     }
-
     public String getMessage() {
         return message;
     }

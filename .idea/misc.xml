@@ -3,21 +3,41 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/drawable/back_icon.xml" value="0.2759259259259259" />
         <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/drawable/bg_4.xml" value="0.29814814814814816" />
         <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/drawable/bg_5.xml" value="0.3482051282051282" />
         <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/drawable/bottom_navigation_selector.xml" value="0.1" />
         <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/drawable/button_bg.xml" value="0.1425925925925926" />
         <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/drawable/button_bg3.xml" value="0.32314814814814813" />
+        <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/drawable/button_bg5.xml" value="0.2759259259259259" />
+        <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/drawable/button_bg6.xml" value="0.2759259259259259" />
         <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/drawable/card_bg.xml" value="0.32314814814814813" />
         <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/drawable/chat_icon.xml" value="0.29814814814814816" />
+        <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/drawable/chat_item_layout.xml" value="0.3333333333333333" />
+        <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/drawable/edit_bg1.xml" value="0.3333333333333333" />
         <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/drawable/home_icon.xml" value="0.2824074074074074" />
         <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2824074074074074" />
+        <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/drawable/receive_chat_item.xml" value="0.3333333333333333" />
+        <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/drawable/send_chat_item.xml" value="0.3333333333333333" />
         <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/drawable/setting_icon.xml" value="0.29814814814814816" />
         <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/drawable/text_round_bg.xml" value="0.2638888888888889" />
+        <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/layout/activity_chating.xml" value="0.2" />
+        <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/layout/activity_earning_hisory.xml" value="0.15729483282674772" />
+        <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/layout/activity_income_guide.xml" value="0.1641337386018237" />
+        <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/layout/activity_invite_friends.xml" value="0.19202898550724637" />
         <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/layout/activity_login.xml" value="0.25" />
-        <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/layout/activity_main.xml" value="0.1911231884057971" />
+        <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/layout/activity_profile.xml" value="0.25" />
+        <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/layout/activity_profile_setting_list.xml" value="0.25" />
+        <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/layout/activity_purchase_package.xml" value="0.25" />
         <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/layout/activity_register.xml" value="0.33" />
+        <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/layout/activity_withdraw_history.xml" value="0.1641337386018237" />
+        <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/layout/activity_youtube_tutorial.xml" value="0.15729483282674772" />
         <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/layout/app_ber_layout.xml" value="0.18" />
+        <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/layout/app_ber_layout2.xml" value="0.25" />
+        <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/layout/change_password_dialog_layout.xml" value="0.1641337386018237" />
+        <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/layout/chat_item_layout.xml" value="0.25" />
+        <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/layout/earning_history_item_layout.xml" value="0.25" />
         <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/layout/fragment_home.xml" value="0.22" />
         <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/layout/fragment_member.xml" value="0.25" />
         <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/layout/fragment_mine.xml" value="0.25" />
@@ -27,11 +47,15 @@
         <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/layout/fragment_order_progress.xml" value="0.20199275362318841" />
         <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/layout/fragment_order_under_review.xml" value="0.20199275362318841" />
         <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/layout/fragment_task.xml" value="0.1641337386018237" />
+        <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/layout/income_guide_item_layout.xml" value="0.1641337386018237" />
         <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/layout/membership_item_layout_2.xml" value="0.18478260869565216" />
         <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/layout/membership_list_item_layout.xml" value="0.1911231884057971" />
+        <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/layout/message_dialouge_layout.xml" value="0.1641337386018237" />
         <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/layout/task_item_layout.xml" value="0.33" />
-        <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/layout/task_submit_item_layout.xml" value="0.18478260869565216" />
-        <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.1" />
+        <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/layout/task_submit_item_layout.xml" value="0.25" />
+        <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/layout/withdraw_address_dialog_layout.xml" value="0.22" />
+        <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/layout/youtube_item_layout.xml" value="0.1641337386018237" />
+        <entry key="..\:/Work/Android/2021/MlmApplication/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.15" />
       </map>
     </option>
   </component>

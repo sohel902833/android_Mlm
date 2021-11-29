@@ -32,9 +32,6 @@ public class UserDb {
         editor.commit();
     }
 
-
-
-
     public User getUserData(){
         User user=null;
         SharedPreferences sharedPreferences=activity.getSharedPreferences("userDb", Context.MODE_PRIVATE);
@@ -53,6 +50,7 @@ public class UserDb {
 
     public void removeUserData(){
         SharedPreferences userShared = activity.getSharedPreferences("userDb", Context.MODE_PRIVATE);
+        setToken("");
         userShared.edit().clear().apply();
     }
 

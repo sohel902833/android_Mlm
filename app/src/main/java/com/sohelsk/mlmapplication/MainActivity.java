@@ -4,10 +4,14 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.sohelsk.mlmapplication.ApiCall.UserApi;
+import com.sohelsk.mlmapplication.DataModel.SettingModel;
+import com.sohelsk.mlmapplication.DataModel.User;
 import com.sohelsk.mlmapplication.HomeFragments.HomeFragment;
 import com.sohelsk.mlmapplication.HomeFragments.MemberFragment;
 import com.sohelsk.mlmapplication.HomeFragments.MineFragment;
@@ -15,10 +19,14 @@ import com.sohelsk.mlmapplication.HomeFragments.OrderFragment;
 import com.sohelsk.mlmapplication.HomeFragments.TaskFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.sohelsk.mlmapplication.LocalDb.UserDb;
+import com.sohelsk.mlmapplication.RetrofitResponse.SettingResponse;
+import com.sohelsk.mlmapplication.RetrofitResponse.UserResponse;
 
 public class MainActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
     private UserDb userDb;
+    private ProgressDialog progressDialog;
+    private UserApi userApi;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
     private  void init(){
+        userApi=new UserApi(this);
+        progressDialog=new ProgressDialog(this);
         userDb=new UserDb(this);
         bottomNavigationView=findViewById(R.id.bottom_navigation);
     }
@@ -41,6 +51,35 @@ public class MainActivity extends AppCompatActivity {
         String token=userDb.getToken();
         if(token.isEmpty()){
             sendUserToLoginActivity();
+        }else{
+            progressDialog.setMessage("Loading..");
+            progressDialog.setCancelable(false);
+            userApi.getCurrentUser(progressDialog, new UserResponse() {
+                @Override
+                public void onSuccess(String message, ProgressDialog progressDialog, User user) {
+                    progressDialog.dismiss();
+                }
+
+                @Override
+                public void onError(String message, ProgressDialog progressDialog) {
+                    progressDialog.dismiss();
+                    userDb.removeUserData();
+                    sendUserToLoginActivity();
+                }
+            });
+            userApi.getAppSetting(new SettingResponse() {
+                @Override
+                public void onSuccess(String message, SettingModel settingModel) {
+
+                }
+
+                @Override
+                public void onError(String message) {
+
+                }
+            });
+
+
         }
     }
 

@@ -51,7 +51,6 @@ public class LoginActivity extends AppCompatActivity {
 
     }
     private  void init(){
-
         userApi = new UserApi(this);
         progressDialog = new ProgressDialog(this);
         phoneEt=findViewById(R.id.l_emailEditTextId);
@@ -64,7 +63,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private void loginUser() {
         progressDialog.setTitle("Please Wait..");
-        progressDialog.setMessage("Creating Your Account.");
+        progressDialog.setMessage("Loging In.");
         progressDialog.setCancelable(false);
 
         String phone = phoneEt.getText().toString();

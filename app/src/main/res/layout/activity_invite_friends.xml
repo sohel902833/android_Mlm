@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".InviteFriendsActivity">
+
+    <include
+        layout="@layout/app_ber_layout2"
+        android:id="@+id/AppBarId"/>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/referCodeTVId"
+            android:text="asdfasdf"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:textAlignment="center"
+            android:textIsSelectable="true"
+            />
+
+        <Button
+            android:id="@+id/referCodeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/button_bg5"
+            android:text="Copy Refer Code"
+            android:textColor="#FF9800"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            />
+              <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/referLinkTvId"
+            android:text="asdfasdf"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:textAlignment="center"
+            android:textIsSelectable="true"
+            />
+
+        <Button
+            android:id="@+id/referLikBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/button_bg5"
+            android:text="Copy Refer Link"
+            android:textColor="#FF9800"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

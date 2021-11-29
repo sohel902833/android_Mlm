@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".PurchasePackageActivity">
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+<include
+    layout="@layout/app_ber_layout2"
+    android:id="@+id/appBarId"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Currency"
+        android:textColor="#000"
+        android:textSize="18sp" />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="USDT"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="19sp" />
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Chain Name"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:background="@drawable/button_bg5"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="TRC20"
+                android:textColor="#FF9800"
+                />
+            <Button
+                android:layout_marginLeft="15dp"
+               android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="ERC20"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/qr"
+                />
+            <TextView
+               android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recharge Address"
+                android:textColor="#000"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/rechargeAddressTvId"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+            <Button
+                android:id="@+id/rechargeAddressCopyBtn"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_bg5"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text="Copy Address"
+                android:textAllCaps="false"
+                android:textColor="#FF9800"
+                />
+
+
+        </LinearLayout>
+        <Button
+
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_bg6"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Recommended USDT currency Exchange App"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Order Number"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/orderNumberTvId"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/usdtTitleTv"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="USDT"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/usdtTvId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/usdtTitleTv"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text=""
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/usdtCopyBtnId"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/button_bg5"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Copy"
+                android:textColor="#FF9800"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Note"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/trxCodeEtId"
+            android:padding="10dp"
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Please Enter The Last 4 Digit Of TXID"
+            />
+        <Button
+            android:id="@+id/submitBtnId"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_bg6"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            />
+    </LinearLayout>
+
+</ScrollView>

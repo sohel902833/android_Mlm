@@ -26,22 +26,22 @@ public class User {
     private String currentLevel;
     @SerializedName("balance")
     @Expose
-    private Integer balance;
+    private Double balance;
     @SerializedName("totalRevenue")
     @Expose
-    private Integer totalRevenue;
+    private Double totalRevenue;
     @SerializedName("dayIncome")
     @Expose
-    private Integer dayIncome;
+    private Double dayIncome;
     @SerializedName("taskRevenue")
     @Expose
-    private Integer taskRevenue;
+    private Double taskRevenue;
     @SerializedName("referralIncome")
     @Expose
-    private Integer referralIncome;
+    private Double referralIncome;
     @SerializedName("teamWorkIncome")
     @Expose
-    private Integer teamWorkIncome;
+    private Double teamWorkIncome;
     @SerializedName("availableTask")
     @Expose
     private Integer availableTask;
@@ -66,9 +66,10 @@ public class User {
     @SerializedName("currentMembership")
     @Expose
     private CurrentMembership currentMembership;
+    private String withdrawAddress="";
 
     public User(){}
-    public User(Integer userId, String name, String password, String phone, String secretCode, String currentLevel, Integer balance, Integer totalRevenue, Integer dayIncome, Integer taskRevenue, Integer referralIncome, Integer teamWorkIncome, Integer availableTask, String joiningDate, Integer myReferCode, Integer referCode, Integer id, Integer todayDone, String time, CurrentMembership currentMembership) {
+    public User(Integer userId, String name, String password, String phone, String secretCode, String currentLevel, Double balance, Double totalRevenue, Double dayIncome, Double taskRevenue, Double referralIncome, Double teamWorkIncome, Integer availableTask, String joiningDate, Integer myReferCode, Integer referCode, Integer id, Integer todayDone, String time, CurrentMembership currentMembership,String withdrawAddress) {
         this.userId = userId;
         this.name = name;
         this.password = password;
@@ -89,6 +90,16 @@ public class User {
         this.todayDone = todayDone;
         this.time = time;
         this.currentMembership = currentMembership;
+        this.withdrawAddress=withdrawAddress;
+    }
+
+
+    public String getWithdrawAddress() {
+        return withdrawAddress;
+    }
+
+    public void setWithdrawAddress(String withdrawAddress) {
+        this.withdrawAddress = withdrawAddress;
     }
 
     public Integer getUserId() {
@@ -139,51 +150,51 @@ public class User {
         this.currentLevel = currentLevel;
     }
 
-    public Integer getBalance() {
+    public Double getBalance() {
         return balance;
     }
 
-    public void setBalance(Integer balance) {
+    public void setBalance(Double balance) {
         this.balance = balance;
     }
 
-    public Integer getTotalRevenue() {
+    public Double getTotalRevenue() {
         return totalRevenue;
     }
 
-    public void setTotalRevenue(Integer totalRevenue) {
+    public void setTotalRevenue(Double totalRevenue) {
         this.totalRevenue = totalRevenue;
     }
 
-    public Integer getDayIncome() {
+    public Double getDayIncome() {
         return dayIncome;
     }
 
-    public void setDayIncome(Integer dayIncome) {
+    public void setDayIncome(Double dayIncome) {
         this.dayIncome = dayIncome;
     }
 
-    public Integer getTaskRevenue() {
+    public Double getTaskRevenue() {
         return taskRevenue;
     }
 
-    public void setTaskRevenue(Integer taskRevenue) {
+    public void setTaskRevenue(Double taskRevenue) {
         this.taskRevenue = taskRevenue;
     }
 
-    public Integer getReferralIncome() {
+    public Double getReferralIncome() {
         return referralIncome;
     }
 
-    public void setReferralIncome(Integer referralIncome) {
+    public void setReferralIncome(Double referralIncome) {
         this.referralIncome = referralIncome;
     }
 
-    public Integer getTeamWorkIncome() {
+    public Double getTeamWorkIncome() {
         return teamWorkIncome;
     }
 
-    public void setTeamWorkIncome(Integer teamWorkIncome) {
+    public void setTeamWorkIncome(Double teamWorkIncome) {
         this.teamWorkIncome = teamWorkIncome;
     }
 

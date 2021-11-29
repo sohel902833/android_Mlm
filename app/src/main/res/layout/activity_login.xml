@@ -30,11 +30,10 @@
                 android:letterSpacing="0.2"
                 />
 
-            <com.google.android.material.card.MaterialCardView
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_below="@+id/textView"
-                style="@style/CustomCardViewStyle"
                 android:elevation="20dp"
                 android:layout_marginTop="10dp">
                 <ScrollView
@@ -67,6 +66,7 @@
                         android:layout_height="wrap_content">
 
                         <EditText
+                            android:text="sohel@gmail.com"
                             android:id="@+id/l_emailEditTextId"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -95,6 +95,7 @@
                         android:layout_height="wrap_content">
 
                         <EditText
+                            android:text="244739"
                             android:inputType="textPassword"
                             android:id="@+id/l_passwordEdittextId"
                             android:layout_width="match_parent"
@@ -152,5 +153,5 @@
                 </LinearLayout>
                 </ScrollView>
 
-            </com.google.android.material.card.MaterialCardView>
+            </androidx.cardview.widget.CardView>
 </RelativeLayout>

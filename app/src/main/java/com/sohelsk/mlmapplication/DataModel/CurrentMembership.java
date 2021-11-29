@@ -16,17 +16,17 @@ public class CurrentMembership {
     private Integer numOfJobs;
     @SerializedName("monthlyIncome")
     @Expose
-    private Integer monthlyIncome;
+    private Double monthlyIncome;
     @SerializedName("price")
     @Expose
-    private Integer price;
+    private Double price;
     @SerializedName("validityDay")
     @Expose
     private Integer validityDay;
 
     public CurrentMembership(){}
 
-    public CurrentMembership(Integer levelId, String levelName, Integer numOfJobs, Integer monthlyIncome, Integer price, Integer validityDay) {
+    public CurrentMembership(Integer levelId, String levelName, Integer numOfJobs, Double monthlyIncome, Double price, Integer validityDay) {
         this.levelId = levelId;
         this.levelName = levelName;
         this.numOfJobs = numOfJobs;
@@ -59,19 +59,19 @@ public class CurrentMembership {
         this.numOfJobs = numOfJobs;
     }
 
-    public Integer getMonthlyIncome() {
+    public Double getMonthlyIncome() {
         return monthlyIncome;
     }
 
-    public void setMonthlyIncome(Integer monthlyIncome) {
+    public void setMonthlyIncome(Double monthlyIncome) {
         this.monthlyIncome = monthlyIncome;
     }
 
-    public Integer getPrice() {
+    public Double getPrice() {
         return price;
     }
 
-    public void setPrice(Integer price) {
+    public void setPrice(Double price) {
         this.price = price;
     }
 
