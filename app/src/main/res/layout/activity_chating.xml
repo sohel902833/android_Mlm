@@ -19,6 +19,15 @@
         android:layout_below="@+id/appBarId" />
 
 
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/chatBottomBarId"
+        android:layout_margin="15dp"
+        android:src="@drawable/sun2"
+        android:id="@+id/imageShowImageView"
+        />
+
 
     <RelativeLayout
         android:layout_alignParentBottom="true"

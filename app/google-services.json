@@ -1,10 +1,40 @@
 {
   "project_info": {
     "project_number": "465598961665",
+    "firebase_url": "https://mlmapplication-31e05-default-rtdb.firebaseio.com",
     "project_id": "mlmapplication-31e05",
     "storage_bucket": "mlmapplication-31e05.appspot.com"
   },
   "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:465598961665:android:866cac1f9fe30b94254800",
+        "android_client_info": {
+          "package_name": "com.sohelsk.boomcash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "465598961665-e979ufcfs0jrohl4jf610hi1oufr6c4h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTsprgXQdj8xJ_zQMrN1HVKzRqtKX_5e4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "465598961665-e979ufcfs0jrohl4jf610hi1oufr6c4h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
     {
       "client_info": {
         "mobilesdk_app_id": "1:465598961665:android:766e999ae89b7a19254800",

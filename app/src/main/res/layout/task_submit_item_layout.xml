@@ -63,7 +63,9 @@
                 android:layout_weight="1"
                 android:background="#fff"
 
-                />  <Button
+                />
+            <Button
+                 android:visibility="gone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Submit"
@@ -71,6 +73,14 @@
                 android:layout_weight="1"
                 android:background="#ffff"
 
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Video"
+                android:id="@+id/videoViewButtonId"
+                android:layout_weight="1"
+                android:background="#ffff"
                 />
 
 

@@ -4,10 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".YoutubeTutorialActivity">
+    <include
+        layout="@layout/app_ber_layout2"
+        android:id="@+id/appBarId"/>
 
 
     <androidx.recyclerview.widget.RecyclerView
+        android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/tutorialRecyclerViewid"

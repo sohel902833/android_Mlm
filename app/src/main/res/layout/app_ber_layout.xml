@@ -13,12 +13,13 @@
         android:layout_height="wrap_content">
 
         <ImageView
+            android:layout_marginRight="5dp"
             android:id="@+id/sunImg"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_alignParentLeft="true"
             android:scaleType="fitXY"
-            android:src="@drawable/sun" />
+            android:src="@drawable/app_icon" />
 
         <TextView
             android:id="@+id/logoId"
@@ -28,7 +29,7 @@
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@+id/sunImg"
             android:letterSpacing="0.1"
-            android:text="LIKE"
+            android:text="BOOM CASH"
             android:textColor="#000"
             android:textSize="25sp"
             android:textStyle="bold" />

@@ -39,7 +39,6 @@
 
         <EditText
 
-            android:text="Md Sohrab Hossain Sohel"
 
             android:background="#fff"
 
@@ -64,8 +63,7 @@
             />
 
         <EditText
-            android:text="sohel@gmail.com"
-            android:background="#fff"
+           android:background="#fff"
 
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
@@ -87,7 +85,6 @@
         />
 
         <EditText
-            android:text="2447"
             android:background="#fff"
 
             android:id="@+id/r_4digitCodeEtId"
@@ -110,8 +107,7 @@
         />
 
         <EditText
-            android:text="244739"
-            android:background="#fff"
+           android:background="#fff"
 
             android:id="@+id/r_passwordEdittextId"
             android:layout_width="match_parent"
@@ -133,8 +129,7 @@
         />
 
         <EditText
-            android:text="244739"
-            android:background="#fff"
+             android:background="#fff"
 
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"

@@ -24,7 +24,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_marginBottom="15dp"
                 android:elevation="10dp"
-                app:cardBackgroundColor="#F3A501"
+                app:cardBackgroundColor="#F31440"
                 app:cardCornerRadius="15dp"
                 android:layout_marginTop="-30dp"
                 android:layout_marginRight="20dp"

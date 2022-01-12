@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:elevation="10dp"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="5dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/r_nameTvId"
+            android:letterSpacing="0.05"
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name : Md Sohrab Hossain Sohel"
+            />
+        <TextView
+            android:id="@+id/r_phoneTvID"
+            android:textStyle="bold"
+            android:textColor="#FF9800"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Or Email"
+            />
+        <TextView
+            android:id="@+id/r_referCodeTvId"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refer Code"
+            android:textSize="17sp"
+            />
+        <TextView
+            android:id="@+id/r_myReferCodeTvId"
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refer Code"
+            android:textSize="17sp"
+            />
+        <TextView
+            android:id="@+id/r_packageNameTv"
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refer Code"
+            android:textSize="17sp"
+            />
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

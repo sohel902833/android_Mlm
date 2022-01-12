@@ -58,12 +58,6 @@
                 android:text="TRC20"
                 android:textColor="#FF9800"
                 />
-            <Button
-                android:layout_marginLeft="15dp"
-               android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:text="ERC20"
-                />
 
         </LinearLayout>
 

@@ -36,7 +36,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:padding="10dp"
-                    android:text="Tiktak"
+                    android:text="Youtube"
                     android:textColor="#000"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -45,6 +45,7 @@
             </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="10dp"
                 android:id="@+id/membershipListRecyclerViewid"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -1,56 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sohelsk.mlmapplication">
+    package="com.sohelsk.boomcash">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/app_icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/app_icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.MlmApplication"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".DailyReportActivity"
+            android:name="com.sohelsk.boomcash.ForgetPasswordActivity"
             android:exported="false" />
         <activity
-            android:name=".ProfileActivity"
+            android:name="com.sohelsk.boomcash.TodayEarningHistoryActivity"
             android:exported="false" />
         <activity
-            android:name=".ChatingActivity"
+            android:name="com.sohelsk.boomcash.NotificationActivity"
             android:exported="false" />
         <activity
-            android:name=".EarningHisoryActivity"
+            android:name="com.sohelsk.boomcash.DepositRecordActivity"
             android:exported="false" />
         <activity
-            android:name=".WithdrawHistoryActivity"
+            android:name="com.sohelsk.boomcash.TeamReportActivity"
             android:exported="false" />
         <activity
-            android:name=".IncomeGuideActivity"
+            android:name="com.sohelsk.boomcash.WithdrawActivity"
             android:exported="false" />
         <activity
-            android:name=".ProfileSettingListActivity"
+            android:name="com.sohelsk.boomcash.DailyReportActivity"
             android:exported="false" />
         <activity
-            android:name=".InviteFriendsActivity"
+            android:name="com.sohelsk.boomcash.ProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".PurchasePackageActivity"
+            android:name="com.sohelsk.boomcash.ChatingActivity"
             android:exported="false" />
         <activity
-            android:name=".YoutubeTutorialActivity"
+            android:name="com.sohelsk.boomcash.EarningHisoryActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.sohelsk.boomcash.WithdrawHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.sohelsk.boomcash.IncomeGuideActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.sohelsk.boomcash.ProfileSettingListActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.sohelsk.boomcash.InviteFriendsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.sohelsk.boomcash.PurchasePackageActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.sohelsk.boomcash.YoutubeTutorialActivity"
             android:exported="true" />
         <activity
-            android:name=".RegisterActivity"
+            android:name="com.sohelsk.boomcash.RegisterActivity"
             android:exported="true" />
         <activity
-            android:name=".LoginActivity"
+            android:name="com.sohelsk.boomcash.LoginActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.sohelsk.boomcash.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
